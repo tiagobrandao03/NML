@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Fábio Souza">
+    <meta name="description" content="Curso de HTMl5 e css3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Norte Leilões</title>
+    <link rel="stylesheet" href="_css/newcss3.css">
+    <style>
+        .p {
+            font-size: 14px;
+            font-family: 'Lato', sans-serif !important;
+        }
+        
+        .caixa_linha_flex {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        .altura_espaçamento {
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+        }
+        
+        .col-md-2 p.breakdown_p {
+            margin: auto;
+            overflow-wrap: break-word;
+            text-align: left;
+            overflow: hidden;
+            line-height: 30px;
+            height: 30px;
+        }
+        
+        .caixa_flex {
+            padding: 1px 1px 0px 0px;
+        }
+        
+        .caixa_flex p {
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 0px;
+            font-size: 14px;
+            font-family: 'Lato', sans-serif !important;
+        }
+        
+        .caixa_flex p.breakdown_p {
+            margin: auto;
+            overflow-wrap: break-word;
+            text-align: left;
+            overflow: hidden;
+            line-height: 20px;
+            height: 20px;
+        }
+        
+        .img_block {
+            margin-top: 20px;
+            height: 115px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<section class="artigos cont1 center" style="background-color: rgb(255, 255, 255); z-index:-2;">
+    <?php
+    $leiloes = Leilao::findAll("status > 0");
+    while ($leilao = $leiloes->fetch()) {
+    ?>
+        <article class="article_format_b caixa_div_outras">
+            <a href="<?= URL ?>leilao/<?= $leilao->id; ?>">
+                <div class="item_thumbnail" style="border:1px solid rgb(206, 206, 206);">
+                    <?php
+            if (is_null($leilao->imagem_thumb) || !is_file(\PATH . 'upload/' . $leilao->imagem_thumb)) {
+              echo '<img src="' . \URL . 'theme/img/logo.png" style="opacity:0.3;width: 100%;max-height: 200px;" />';
+            } else {
+              echo '<img src="' . \URL . 'upload/' . $leilao->imagem_thumb . '" style="width: 100%;max-height: 200px;" />';
+
+            ?>
+                        <img src="<?= URL ?>site/img/exemplo2.jpg">
+                        <?php
+            }
+            ?>
+                            <p style="margin-bottom: -0px!important;text-align: left;color:black;">Leilao:
+                                <?= $leilao->nome; ?>
+                            </p>
+                            <article class="cont1 row1">
+                                <div class="item_button ">
+                                    <p style="border:0px solid black;font-size: 14px;color:black;">Lote:
+                                        <?= $leilao->lote; ?>
+                                    </p>
+                                </div>
+                                <div class="item_button " style="margin-left: 10px;">
+                                    <p style="border:0px solid black;font-size: 14px;color:black;">
+                                        <?= $leilao->status; ?>
+                                    </p>
+                                </div>
+                            </article>
+                            <p style="margin-bottom: -0px!important;text-align: left;color:black;">Valor:
+                                <?= $leilao->valor_inicial; ?>
+                            </p>
+                            <a href="<?= URL ?>leilao/<?= $leilao->id; ?>" class="" style="    border: 0px solid black;
+                                    font-size: 14px;
+                                    background-color: rgb(51, 204, 51);padding: 5px 5px;
+                                    color: #fff;">Clique aqui</a>
+                </div>
+            </a>
+        </article>
+        <?php } 
+    ?>
+</section>
+
+
+<body class="tipo">
+    <section class="container-fluid">
+        <div class="row justify-content-md-center">
+            <?php
+                $leiloes = Leilao::findAll("status > 0");
+                while ($leilao = $leiloes->fetch()) {
+            ?>
+                <article class="col-lg-2 col-md-2 col-sm-12" style="border: 1px solid rgb(206, 206, 206);">
+                    <a href="<?= URL ?>leilao/<?= $leilao->id; ?>">
+                        <?php
+                        if (is_null($leilao->imagem_thumb) || !is_file(\PATH . 'upload/' . $leilao->imagem_thumb)) {
+                          echo '<img src="' . \URL . 'theme/img/logo.png" style="opacity:0.3;width: 100%;max-height: 200px;" />';
+                        } else {
+                          echo '<img src="' . \URL . 'upload/' . $leilao->imagem_thumb . '" style="width: 100%;max-height: 200px;" />';
+      
+                        ?>
+                            <img class="img_block" src="img/exemplo2.jpg" alt="" style="">
+                            <?php
+                    }
+                    ?>
+                                <p class="breakdown_p" style="margin-bottom: -0px!important;text-align: left;">Leilao:
+                                    <?= $leilao->nome; ?>
+                                </p>
+                                <!-- dados do leilao -->
+                                <div class="caixa_linha_flex altura_espaçamento" style="">
+                                    <div class="caixa_flex breakdown_p" style="height: 10px;">
+                                        <p style="">Leilao:
+                                            <?= $leilao->nome; ?>
+                                        </p>
+                                    </div>
+                                    <div class="caixa_flex breakdown_p" style="height: 10px;">
+                                        <p style="">Lote:
+                                            <?= $leilao->lote; ?>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="breakdown_p" style="margin-bottom: -0px!important;text-align: left;">Valor:
+                                    <?= $leilao->valor_inicial; ?>
+                                </p>
+                                <button class="btn btn-success btn-block" style="margin-bottom: 20px;">Clique aqui</button>
+                                <!-- fim dados -->
+                    </a>
+                </article>
+
+        </div>
+    </section>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/countUp.min.js"></script>
+</body>
+
+</html>

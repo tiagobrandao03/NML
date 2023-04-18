@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Fábio Souza">
+    <meta name="description" content="Curso de HTMl5 e css3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Norte Leilões</title>
+    <link rel="stylesheet" href="_css/newcss3.css">
+    <style>
+      .main{
+        z-index: -2!important;
+      }
+       .cont5 {
+            /* margin: 0 auto; */
+            display: flex;
+           
+        }
+        .item_nav {
+            /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+            /* flex: 1; */
+            
+            padding: auto;
+        }
+        .center {
+          justify-content: center;
+        }
+
+        td{
+          padding: 1px 5px;
+          font-size: 12px;
+          text-align: left;
+        }
+        th{
+          padding: 1px 5px;
+          font-size: 12px;
+          text-align: left;
+        }
+
+        table{
+          margin: 10px 10px;
+        }
+        
+        .definicao{
+          padding: 2px 80px 2px 3px;
+        }
+        .td_defini{
+          padding: 2px 20px 2px 3px;
+        }
+        
+    </style>
+   
+</head>
+<body class="tipo">
+  <header style="background-color: Rgb(180,0,4);z-index: 1;position: relative;">
+    <div class="cont1 center" style="background-color: Rgb(180,0,4);z-index: 1;position: relative;">
+        <article class="item_b" style="border:1px solid;">
+            <p style="margin-bottom:-2px;color:#ffff;">contato@saraivaleiloes.com.br | (31) 3207-3900
+            </p>
+        </article>
+        <article class="item_b cont1" style="border:1px solid;" >
+            <!-- <article class="item_b" style="padding: 0px 0px;"><i class="fa fa-address-book-o fa-xs" style="height: 50%;"></i></article> -->
+            <!-- <article class="item_b" style="padding: 0px 0px;"><i class="fa fa-address-book-o fa-xs" style="height: 50%;"></i></article> -->
+        </article>
+    </div>
+    <nav class="estilo" style="z-index: 1;position: relative;">
+        <div class="nav-wrapper" style="z-index: 1;position: relative;">
+           <!--  menu para desktop -->
+            <ul class="menu-desktop center" style="width:auto;height:50px;z-index: 1;">
+                <li style="padding: 2px 20px;width:auto;"><img src="img/logo_corte_norte.png" alt="" style="width: 60px;height: 80%;
+                  margin-top: 4px;"></li>
+                <li style="padding: 2px 20px; width:auto;"><a href="index.html" style=" color:#fff!important;background-color: Rgb(180,0,4);border-radius: 25px;
+                    ">Home</a></li>
+                <li style="padding: 2px 20px;width:auto;"><a href="servicos.html">Serviços</a></li>
+                <li style="width:auto;padding: 2px 20px;"><a href="quem_somos.html">Quem somos</a></li>
+                <li style="width:auto;padding: 2px 20px;"><a href="quem_somos.html">Quem somos</a></li>
+                <li style="width:auto;padding: 2px 20px;"><a href="quem_somos.html">Quem somos</a></li>
+                <li style="padding: 2px 20px;width:auto;"><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- menu para dispositivos moveis -->
+            <label class="estilo2" for="check" style="z-index: 2;position: relative;">&#8801</label>
+            <input type="checkbox" id="check">
+            <ul class="menu-movel" style="z-index: 2;position: relative;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="quem_somos.html">Quem somos</a></li>
+                <li><a href="#contato" >Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main" style="position: relative;">
+    <section class="artigos cont1 center" style="background-color: rgb(64, 64, 64);width: 100%;">
+        <section class="artigos cont1 center" style="width: 60%;">
+            <article class="article_format" style="color:#fff;width:600px;text-align: left;width: 300px!important;padding: 20px 140px;" >
+                <p>A SARAIVA LEILÕES iniciou suas atividades em 2001 com a Leiloeira Pública Oficial Angela Saraiva, que é hoje referência no mercado por sua expertise e dedicação aos leilões judiciais e extrajudiciais.</p>
+             
+            </article>
+        </section>
+       
+    </section>
+    <section class="artigos_c cont1 center" style="text-align: left;">
+        <article class="article_format" style="text-align: left;width: 100%;">
+            <h3>Fale Conoscos</h3>
+            <p>Valorizamos nossos clientes, aprimorados cada vez mais nosso</p>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="setor">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome Completo">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Telefone">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </article>
+        
+    </section>
+</main>
+    <!-- <main class="main" style="position: relative;">
+        <section class="gestao-espacamento">
+            <section class="artigos cont1 center" style="background-color: rgb(64, 64, 64);width: 100%;">
+                <section class="artigos cont1 center">
+                    <article class="article_format" style="color:#fff;width:600px;text-align: left;" >
+                        <p>A SARAIVA LEILÕES iniciou suas atividades em 2001 com a Leiloeira Pública Oficial Angela Saraiva, que é hoje referência no mercado por sua expertise e dedicação aos leilões judiciais e extrajudiciais.</p>
+                        <p>A capacitação técnica da equipe de um leiloeiro é o seu maior ativo e o que há de mais importante em sua estrutura. Por isso a equipe da SARAIVA LEILÕES, além de possuir larga experiência em leilões judiciais e extrajudiciais, está sempre atualizando os seus conhecimentos afim de melhor atender aos seus clientes.</p>
+                        <p>Desde o início, o objetivo foi conquistar a confiança dos Arrematantes, Judiciário, Advogados, e Comitentes através do bom trabalho e da transparência. Por esta razão, a SARAIVA LEILÕES se tornou a mais respeitada Organização de Leilões judiciais de Minas Gerais.</p>
+                    </article>
+                </section>
+               
+            </section>
+            <section class="artigos cont1 center" style="text-align: left;">
+                <article class="article_format" style="text-align: left;">
+                    <p>A SARAIVA LEILÕES iniciou suas atividades em 2001 com a Leiloeira Pública Oficial Angela Saraiva, que é hoje referência no mercado por sua expertise e dedicação aos leilões judiciais e extrajudiciais.</p>
+                   
+                </article>
+                <article class="article_format" style="text-align: left;">
+                    <p>A capacitação técnica da equipe de um leiloeiro é o seu maior ativo e o que há de mais importante em sua estrutura. Por isso a equipe da SARAIVA LEILÕES, além de possuir larga experiência em leilões judiciais e extrajudiciais, está sempre atualizando os seus conhecimentos afim de melhor atender aos seus clientes.</p>
+                </article>
+                <article class="article_format" style="text-align: left;">
+                    <p>Desde o início, o objetivo foi conquistar a confiança dos Arrematantes, Judiciário, Advogados, e Comitentes através do bom trabalho e da transparência. Por esta razão, a SARAIVA LEILÕES se tornou a mais respeitada Organização de Leilões judiciais de Minas Gerais.</p>
+                </article>
+            </section>
+            <section class="artigos cont1 center" style="">
+                <section class="artigos_b cont1 center">
+                    <article class="article_format_b" style="width:600px;text-align: left;" >
+                        <p>A SARAIVA LEILÕES iniciou suas atividades em 2001 com a Leiloeira Pública Oficial Angela Saraiva, que é hoje referência no mercado por sua expertise e dedicação aos leilões judiciais e extrajudiciais.</p>
+                        <ul>
+                            <li>leiloes</li>
+                            <li>leiloes</li>
+                            <li>leiloes</li>
+                            <li>leiloes</li>
+                            <li>leiloes</li>
+                            <li>leiloes</li>
+                        </ul>
+                       
+                    </article>
+                </section>
+               
+            </section>
+            <section class="artigos cont1 center" style="">
+                <section class="artigos cont1 center">
+                    <article class="article_format " style="width:600px;text-align: left;" >
+                        <p>A SARAIVA LEILÕES iniciou suas atividades em 2001 com a Leiloeira Pública Oficial Angela Saraiva, que é hoje referência no mercado por sua expertise e dedicação aos leilões judiciais e extrajudiciais.</p>
+                    </article>
+                    <article class="article_format " style="width:600px;text-align: left;" >
+                        <p>A SARAIVA LEILÕES iniciou suas atividades em 2001 com a Leiloeira Pública Oficial Angela Saraiva, que é hoje referência no mercado por sua expertise e dedicação aos leilões judiciais e extrajudiciais.</p>
+                    </article>
+                </section>
+               
+            </section>
+        </section>
+    </main> -->
+    <!-- <main class="main" style="position: relative;">
+          <section class="gestao-espacamento" style="z-index: -2;">
+            <div class="sessao-principal" style="">
+              
+                <section style="background-color: rgb(255, 255, 255);">
+              
+                
+                <section class="artigos cont1 " style="background-color: rgb(255, 255, 255); z-index:-2;">
+                  <article class="article_format caixa_div_outras" style="">
+                    <div class="item" style="border:1px solid rgb(206, 206, 206);">
+                      <section class="artigos_b cont1 ">
+                        <article class="article_format">
+                          <img src="img/formato_maior_b.jpg" alt="" style="width: 400px;">
+                        </article>
+                        <article class="article_format_b">
+                          <section class="artigos_c cont1">
+                            <table class="">
+                              <thead>
+                                <tr>
+                                  <th scope="">Lote</th>
+                                  <th scope="">Em andamento</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="">Encerramento</th>
+                                  <td>Lorem ypsulum</td>
+                                </tr>
+                                <tr>
+                                  <th scope="">Valor Inicial</th>
+                                  <td>Lorem ypsulum</td>
+                                </tr>
+                                <tr>
+                                  <th scope="">
+                                    Incremento
+                                  </th>
+                                  <td>Lorem ypsulum</td>
+                                </tr>
+                                <tr>
+                                  <th scope="">Arrematado por </th>
+                                  <td>Lorem ypsulum</td>
+                                </tr>
+                                <tr>
+                                  <th scope="">Valor Arrematado</th>
+                                  <td>Lorem ypsulum</td>
+                                </tr>
+                                <tr>
+                                  <th scope="">Processo</th>
+                                  <td>Lorem ypsulum</td>
+                                </tr>
+                                <tr>
+                                  <th scope="">Descrição</th>
+                                  <td>Lorem ypsulum</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </section>
+                          <section class="artigos_c cont1">
+                            <table class="">
+                              <thead>
+                                <tr>
+                                  <th scope="" class="definicao border border-white bg-secondary text-white" style="">Usuario</th>
+                                  <th scope="" class="td_defini border border-white bg-secondary text-white">Data</th>
+                                  <th scope="" class="td_defini border border-white bg-secondary text-white">Valor</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary"  style="">Daniel</th>
+                                  <td class="td_defini border border-secondary" style="">01/01/2021</td>
+                                  <td class="td_defini border border-secondary" style="">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary">Daniel</th>
+                                  <td class="td_defini border border-secondary">01/01/2021</td>
+                                  <td class="td_defini border border-secondary">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary" >Jonas</th>
+                                  <td class="td_defini border border-secondary">01/01/2021</td>
+                                  <td class="td_defini border border-secondary">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary">Daniel</th>
+                                  <td class="td_defini border border-secondary">01/01/2021</td>
+                                  <td class="td_defini border border-secondary">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary">Daniel</th>
+                                  <td class="td_defini border border-secondary">01/01/2021</td>
+                                  <td class="td_defini border border-secondary">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary">Daniel</th>
+                                  <td class="border border-secondary">01/01/2021</td>
+                                  <td class="border border-secondary">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary">Jonas</th>
+                                  <td class="td_defini border border-secondary">01/01/2021</td>
+                                  <td class="td_defini border border-secondary">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="" class="definicao border border-secondary">Daniel</th>
+                                  <td class="td_defini border border-secondary">01/01/2021</td>
+                                  <td class="td_defini border border-secondary">R$0,00</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </section>
+                        </article>
+                      </section>
+                   
+                    </div>
+                </article> 
+                </section>
+            
+            </section>
+             </div>
+          </section>
+    </main> -->
+    <footer style="background-color: rgb(64, 64, 64);">
+     
+      <section class="background-color: rgb(64, 64, 64);">
+      <section class="artigos cont1 center" style="background-color: rgb(64, 64, 64); ">
+        <article class="article_format caixa_div_outras" style="background-color: rgb(64, 64, 64);">
+          <center>
+            <div class="item" style="">
+              <h3 style="margin-bottom:-2px;margin-top: 0px!important;color:#fff;">Lorem Ipsum</h3>
+            </div>
+          </center>
+        </article> 
+      </section>
+      </section>
+
+      <section style="background-color: rgb(64, 64, 64);">
+      <section class="artigos cont1 center" style="background-color: rgb(64, 64, 64); z-index:-2;">
+        <article class="article_format caixa_div_outras" style="background-color: rgb(64, 64, 64);color: #fff;">
+            <div class="item" style="">   
+              <p style="margin-bottom:-2px;margin-top: 0px!important;color:#fff;text-align: left;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+        </article> 
+        <article class="article_format caixa_div_outras" style="background-color: rgb(64, 64, 64);color: #fff;">
+            <div class="item" style="">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+            </div>
+        </article> 
+      </section>
+    </section>
+
+      <section style="background-color:Rgb(180,0,4);">
+      <section class="artigos cont1 center" style="background-color:Rgb(180,0,4); z-index:-2;">
+        <article class="article_format caixa_div_outras" style="background-color:Rgb(180,0,4);color: #fff;">
+            <div class="" style="">
+              <div class="module">
+                <ul class="flex-start" style="">
+                <li style="">Home</li>
+                <li style="">Serviços</li>
+                <li style="">Quem somos</li>
+                <li style="">Quem somos</li>
+                <li style="">Quem somos</li>
+                <li style="">Contato</li>
+              </ul>
+              </div>
+              
+            </div>
+        </article> 
+        <article class="article_format caixa_div_outras" style="background-color:Rgb(180,0,4);color: #fff;">
+            <div class="item" style="">
+                  <div class="module">
+                    
+                  </div>
+                  <p style="margin-top: 0px!important;">IMOVEL A <br> LEILAO 131415 </p>
+                </div>
+        </article>    
+        <article class="article_format caixa_div_outras" style="background-color:Rgb(180,0,4);color: #fff;">
+          <div class="item" style="">
+                <div class="module">
+                  
+                </div>
+                <p style="margin-top: 0px!important;">IMOVEL A <br> LEILAO 131415 </p>
+              </div>
+      </article>  
+      </section>
+    </section>
+      <!-- fim rodape 3 -->
+    </footer>
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+      <script src="js/swiper.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script src="js/countUp.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+          });
+
+          $("#main_video").play();
+        })
+    // $(document).ready(function() {
+    //   $('select').select2();
+    // })
+      </script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+</body>
+</html>
+
+                        <!-- <img class="img_office_format" src="_img/f11.jpg" alt="" style="z-index: 1;opacity: 0.2;margin-top: 0px;"> -->
+                         <!-- <p class="numero_fantasma" style="">1</p> -->
+                         <!-- <p class="numero_fantasma" style="">1</p> -->
+                         <!-- <p class="numero_fantasma" style="">1</p> -->
+                         <!-- <img class="img_office_format" src="_img/f11.jpg" alt="" style="z-index: 1;opacity: 0.2;margin-top: 0px;"> -->
+                         <!-- <img class="img_office_format" src="_img/f11.jpg" alt="" style="z-index: 1;opacity: 0.2;margin-top: 0px;"> -->
+                         <!-- <section class="artigos-medio cont1 section_fantasma">
+                        <article class="medio">
+                        <img class="ajuste" src="_img/quick2.png" alt="" style="    ">
+                        </article>
+                        </section> -->
+                        <!--  -->
+                        <!-- <section class="artigos-auto">
+                        <article class="auto">
+                        <h3 class="font_estilo" style="">
+                            PLATAFORMA <br>ON-LINE PARA <br> GESTÃO EFETIVA, <br> INTERAÇÕES SEM <br> CONFLITO E <br> MÓDULOS <br>
+                            TOTALMENTE <br> INTEGRADOS </h3>
+                        </article>
+                        </section> -->
